@@ -1,0 +1,31 @@
+package com.java.demo.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.java.demo.doas.CrudRepo;
+
+@Service
+public class TopicService {
+	
+	@Autowired
+	CrudRepo topicDao;
+	
+	private List<Topic> topics = new ArrayList<>(); 
+	
+	public List<Topic> getAllTopics(){
+		topicDao.findAll().forEach(topics::add);
+		return topics;
+	}
+	
+	public Topic getTopicById(String id){
+		return topicDao.findById(id).get();
+	}
+	
+	public Topic addTopicById(Topic topic){
+		return topicDao.save(topic);
+	}
+}

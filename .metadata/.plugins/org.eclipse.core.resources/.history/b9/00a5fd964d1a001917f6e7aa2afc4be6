@@ -1,0 +1,27 @@
+#server.port=8081
+#spring.datasource.initialize=true
+spring.jpa.show-sql=true
+
+#hsql
+#spring.datasource.type= com.zaxxer.hikari.HikariDataSource
+#spring.datasource.dataSourceClassName=org.hsqldb.jdbc.JDBCDriver
+#spring.datasource.driver-class-name=org.hsqldb.jdbc.JDBCDriver
+#spring.datasource.url=jdbc:hsqldb:file:c:/tmp/hsqldb/DIRDB;sql.syntax_db2=true;shutdown=true;hsqldb.write_delay=false;create=false 
+#spring.datasource.username=sa
+#spring.datasource.password=
+#spring.jpa.hibernate.ddl-auto=update
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+
+#ORACLE
+
+
+spring.datasource.type= com.zaxxer.hikari.HikariDataSource
+spring.datasource.dataSourceClassName=oracle.jdbc.driver.OracleDriver
+spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
+spring.datasource.url=jdbc:oracle:thin:@//10.254.187.169:1521/orcl106
+spring.datasource.username=NILESH_TMP
+spring.datasource.password=sepa2012
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.Oracle10gDialect
+
+

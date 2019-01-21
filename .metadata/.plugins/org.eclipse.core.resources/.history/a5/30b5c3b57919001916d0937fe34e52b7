@@ -1,0 +1,17 @@
+#server.port=8081
+
+
+#hibernate.dialect=org.hibernate.dialect.HSQLDialect
+#hibernate.transaction=jdbc
+#prodirectory.jdbc.driverClassName=org.hsqldb.jdbc.JDBCDriver
+#prodirectory.jdbc.url=jdbc:hsqldb:file:../target/hsqldb/DIRDB;sql.syntax_db2=true;shutdown=true;hsqldb.write_delay=false;create=false
+#prodirectory.jdbc.username=sa
+#prodirectory.jdbc.password=
+
+spring.datasource.driver-class-name=org.hsqldb.jdbc.JDBCDriver 
+spring.datasource.url=jdbc:hsqldb:file:c:/temp/hsqldb/DIRDB;sql.syntax_db2=true;shutdown=true;hsqldb.write_delay=false;create=false 
+spring.datasource.username=sa 
+spring.datasource.password= 
+spring.jpa.hibernate.ddl-auto=update
+spring.datasource.initialize=true
+spring.jpa.show-sql=true
