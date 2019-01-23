@@ -1,9 +1,0 @@
-package com.java.demo.doas;
-
-import org.springframework.data.repository.CrudRepository;
-
-import com.java.demo.controller.Topic;
-
-public interface TopicDao extends CrudRepository<Topic, String>{
-
-}
